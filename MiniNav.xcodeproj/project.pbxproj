@@ -56,8 +56,8 @@
 		BF3D52FD1934DDB800917E01 /* MiniNavTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniNavTests-Info.plist"; sourceTree = "<group>"; };
 		BF3D52FF1934DDB800917E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF3D53011934DDB800917E01 /* MiniNavTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniNavTests.m; sourceTree = "<group>"; };
-		BF3D530B1934E26C00917E01 /* MiniNavVue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniNavVue.h; sourceTree = SOURCE_ROOT; };
-		BF3D530C1934E26C00917E01 /* MiniNavVue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniNavVue.m; sourceTree = SOURCE_ROOT; };
+		BF3D530B1934E26C00917E01 /* MiniNavVue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiniNavVue.h; path = MiniNav/MiniNavVue.h; sourceTree = SOURCE_ROOT; };
+		BF3D530C1934E26C00917E01 /* MiniNavVue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiniNavVue.m; path = MiniNav/MiniNavVue.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 				BF3D52DA1934DDB700917E01 /* Supporting Files */,
 			);
 			path = MiniNav;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		BF3D52DA1934DDB700917E01 /* Supporting Files */ = {
 			isa = PBXGroup;
