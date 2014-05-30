@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MiniNavVue.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController {
+    MiniNavVue *MiniNav;
+
+}
 
 @end

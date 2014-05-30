@@ -22,6 +22,7 @@
 		BF3D52F81934DDB700917E01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3D52D71934DDB700917E01 /* UIKit.framework */; };
 		BF3D53001934DDB800917E01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF3D52FE1934DDB800917E01 /* InfoPlist.strings */; };
 		BF3D53021934DDB800917E01 /* MiniNavTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3D53011934DDB800917E01 /* MiniNavTests.m */; };
+		BF3D530D1934E26C00917E01 /* MiniNavVue.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3D530C1934E26C00917E01 /* MiniNavVue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		BF3D52FD1934DDB800917E01 /* MiniNavTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniNavTests-Info.plist"; sourceTree = "<group>"; };
 		BF3D52FF1934DDB800917E01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF3D53011934DDB800917E01 /* MiniNavTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniNavTests.m; sourceTree = "<group>"; };
+		BF3D530B1934E26C00917E01 /* MiniNavVue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniNavVue.h; sourceTree = SOURCE_ROOT; };
+		BF3D530C1934E26C00917E01 /* MiniNavVue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniNavVue.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,9 @@
 		BF3D52D91934DDB700917E01 /* MiniNav */ = {
 			isa = PBXGroup;
 			children = (
+				BF3D530E1934F21500917E01 /* Ressources */,
+				BF3D530B1934E26C00917E01 /* MiniNavVue.h */,
+				BF3D530C1934E26C00917E01 /* MiniNavVue.m */,
 				BF3D52E21934DDB700917E01 /* AppDelegate.h */,
 				BF3D52E31934DDB700917E01 /* AppDelegate.m */,
 				BF3D52E51934DDB700917E01 /* Main_iPhone.storyboard */,
@@ -153,6 +159,14 @@
 				BF3D52FE1934DDB800917E01 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF3D530E1934F21500917E01 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Ressources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3D52ED1934DDB700917E01 /* ViewController.m in Sources */,
+				BF3D530D1934E26C00917E01 /* MiniNavVue.m in Sources */,
 				BF3D52E41934DDB700917E01 /* AppDelegate.m in Sources */,
 				BF3D52E01934DDB700917E01 /* main.m in Sources */,
 			);
@@ -320,7 +335,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -359,7 +374,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -393,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MiniNav/MiniNav-Prefix.pch";
 				INFOPLIST_FILE = "MiniNav/MiniNav-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,6 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MiniNav/MiniNav-Prefix.pch";
 				INFOPLIST_FILE = "MiniNav/MiniNav-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +487,7 @@
 				BF3D53071934DDB800917E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF3D53081934DDB800917E01 /* Build configuration list for PBXNativeTarget "MiniNavTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +496,7 @@
 				BF3D530A1934DDB800917E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

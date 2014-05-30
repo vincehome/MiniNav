@@ -18,6 +18,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    MiniNav = [[MiniNavVue alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self setView:MiniNav];
+    
+
+    
+    
+    [MiniNav release];
+}
+
+-(BOOL) shouldAutorotate {
+    return YES;
+}
+
+-(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation) InterfaceOrientation duration:(NSTimeInterval)duration{
+    [MiniNav GereLaRotation:InterfaceOrientation];
 }
 
 - (void)didReceiveMemoryWarning
